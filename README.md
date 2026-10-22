@@ -6,6 +6,8 @@ El enlace a un archivo interno de `/workspace` no es un enlace web para el telé
 
 Este repositorio contiene un sitio estático compatible con GitHub Pages. Después de subir la rama `main`, activar **Settings → Pages → Build and deployment → Deploy from a branch → main → /(root) → Save**. No es necesario contratar un servidor ni instalar dependencias. La dirección habitual del proyecto será `https://ravicunas.github.io/Simulador-Quizzes/`; solo debe considerarse disponible después de que GitHub complete la publicación y se compruebe una respuesta correcta del sitio.
 
+El flujo `.github/workflows/pages.yml` publica automáticamente desde `main` cuando cambia `index.html`, `.nojekyll` o el propio flujo. También puede ejecutarse desde **Actions → Publicar simulador en GitHub Pages → Run workflow**. Usa las acciones oficiales de GitHub fijadas a sus commits y sube un artefacto que contiene únicamente `index.html` y `.nojekyll`. Es compatible con Pages configurado para la rama `main` o con GitHub Actions como origen. El resultado y la dirección de publicación aparecen en la ejecución de Actions.
+
 El historial de cada celular se guarda en su propio navegador y no se sincroniza con el de la computadora. Las lecturas y los PPT originales están fuera del repositorio y no forman parte del sitio.
 
 ## Archivo autónomo
